@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uTest user registration" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-10-18T03:16:14" hostname="EVGA-RICARDO" time="0.035">
+  <properties/>
+  <testcase name="A new user correctly register in uTest" classname="uTest user registration" time="0.035">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@69f91bd3
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@26c0ec8e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2556ba52
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: A new user correctly register in uTest:Given than the user is on the uTest singUp page, When the user provides the required data in each step, Then the welcome uTest page should display
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [A new user correctly register in uTest:Given than the user is on the uTest singUp page, When the user provides the required data in each step, Then the welcome uTest page should display]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [A new user correctly register in uTest:Given than the user is on the uTest singUp page, When the user provides the required data in each step, Then the welcome uTest page should display]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: A new user correctly register in uTest
+---------------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
