@@ -18,6 +18,9 @@ public class RandomData {
         if (data.get(0).getStrLastName().contentEquals("<random lastname>")){
             data.get(0).setStrLastName(faker.name().lastName());
         }
+        if (data.get(0).getStrPassword().contentEquals("<random password>")){
+            data.get(0).setStrPassword("P4ss." + faker.lorem().characters(8, 16));
+        }
 
     }
 }
