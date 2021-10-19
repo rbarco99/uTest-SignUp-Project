@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="uTest user registration" skipped="1" tests="1" time="0.12" timestamp="2021-10-17 10:16:14"><testcase name="A new user correctly register in uTest"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="uTest user registration" skipped="0" tests="1" time="53.01" timestamp="2021-10-18 06:57:50"><testcase name="A new user correctly register in uTest"/></testsuite>

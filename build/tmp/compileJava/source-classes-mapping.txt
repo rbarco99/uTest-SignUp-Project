@@ -1,0 +1,28 @@
+userinterface/LastStepPage.java
+ userinterface.LastStepPage
+userinterface/UtestHomePage.java
+ userinterface.UtestHomePage
+tasks/FillAboutYourselfPage.java
+ tasks.FillAboutYourselfPage
+questions/Answer.java
+ questions.Answer
+userinterface/WelcomePage.java
+ userinterface.WelcomePage
+random/RandomData.java
+ random.RandomData
+model/UtestData.java
+ model.UtestData
+tasks/OpenUpUtest.java
+ tasks.OpenUpUtest
+tasks/FillAddressPage.java
+ tasks.FillAddressPage
+tasks/FillDevicesPage.java
+ tasks.FillDevicesPage
+tasks/FillLastStepPage.java
+ tasks.FillLastStepPage
+userinterface/AboutYourselfPage.java
+ userinterface.AboutYourselfPage
+userinterface/DevicesPage.java
+ userinterface.DevicesPage
+userinterface/AddressPage.java
+ userinterface.AddressPage
