@@ -11,7 +11,7 @@ public class OpenUpUtest implements Task {
     
     private UtestHomePage utestHomePage;
 
-    public static OpenUpUtest thePage() {
+    public static OpenUpUtest singUpPage() {
         return Tasks.instrumented(OpenUpUtest.class);
     }
 

@@ -5,40 +5,42 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import model.UtestData;
-import net.serenitybdd.screenplay.GivenWhenThen;
-import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import questions.Answer;
-import random.RandomData;
+import questions.WelcomeMessage;
+import random.GenerateRandom;
 import tasks.*;
 
 import java.util.List;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
+import static net.serenitybdd.screenplay.actors.OnStage.*;
+
 public class UtestStepDefinition {
     @Before
     public void setStage (){
-        OnStage.setTheStage(new OnlineCast());
+        setTheStage(new OnlineCast());
     }
 
     @Given("^that the user is on the uTest singUp page$")
-    public void thanTheUserIsOnTheUTestSingUpPage() throws Exception{
-        OnStage.theActorCalled("Ricardo").wasAbleTo(OpenUpUtest.thePage());
+    public void thanTheUserIsOnTheUTestSingUpPage(){
+        theActorCalled("Ricardo").wasAbleTo(OpenUpUtest.singUpPage());
     }
 
 
     @When("^the user provides the required personal information in each step$")
-    public void theUserProvidesTheRequiredPersonalInformationInEachStep(List<UtestData> data) throws Exception {
-        RandomData.generate(data);
-        OnStage.theActorInTheSpotlight().attemptsTo(FillAboutYourselfPage.thePage(data),
-                FillAddressPage.thePage(data),
-                FillDevicesPage.thePage(data),
-                FillLastStepPage.thePage(data)
+    public void theUserProvidesTheRequiredPersonalInformationInEachStep(List<UtestData> data){
+        GenerateRandom.data(data.get(0));
+        theActorInTheSpotlight().attemptsTo(
+                FillPersonal.data(data.get(0)),
+                FillAddress.data(data.get(0)),
+                FillDevices.information(data.get(0)),
+                FillSecurity.information(data.get(0))
         );
     }
 
     @Then("^the welcome uTest page should display$")
-    public void theWelcomeUTestPageShouldDisplay(List<UtestData> data) throws Exception{
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(data)));
+    public void theWelcomeUTestPageShouldDisplay(List<UtestData> data){
+        theActorInTheSpotlight().should(seeThat(WelcomeMessage.isDisplayed(data.get(0))));
     }
 
 }
